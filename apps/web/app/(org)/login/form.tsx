@@ -31,10 +31,10 @@ import { getEmailCodeCooldownSeconds, requestEmailCode } from "../auth-email";
 import { getSafeNextPath } from "../safe-next";
 import { SsoErrorNotice } from "../sso-error-notice";
 
-const MotionInput = motion(Input);
-const MotionLogoBadge = motion(LogoBadge);
-const MotionLink = motion(Link);
-const MotionButton = motion(Button);
+const MotionInput = motion.create(Input);
+const MotionLogoBadge = motion.create(LogoBadge);
+const MotionLink = motion.create(Link);
+const MotionButton = motion.create(Button);
 
 export function LoginForm() {
 	const searchParams = useSearchParams();
